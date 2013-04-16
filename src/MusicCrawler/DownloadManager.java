@@ -382,7 +382,7 @@ public class DownloadManager extends JFrame implements Observer
 		fileChooser.setCurrentDirectory(new File(Url.substring(Url.lastIndexOf('/')+1)));
 		try 
 		{
-			defaultPath= "" + new java.io.File(".").getCanonicalPath()+"/"+Url.substring(Url.lastIndexOf('/'));
+			defaultPath= "" + new java.io.File(".").getCanonicalPath()+Url.substring(Url.lastIndexOf('/'));
 			System.out.println("default path is "+defaultPath);
 		} 
 		catch (IOException e) 

@@ -320,6 +320,7 @@ public class MainWindow extends JFrame implements Observer
 				{
 					state="No results found. please try a different search term";
 				}
+				lblNewLabel.setText(state);
 			}
 			else if(state.startsWith("preview"))
 			{
