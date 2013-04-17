@@ -20,7 +20,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 
-class JPanelWithBackground extends JPanel implements Observer
+class JPanelWithBackground extends JPanel
 { 
 
 	private static final long serialVersionUID = 1L;	
@@ -67,12 +67,6 @@ class JPanelWithBackground extends JPanel implements Observer
     	g.dispose();
     	return resizedImage;
     }
-	@Override
-	public void update(Observable o, Object arg)
-	{
-		
-	}
-
 }
 
 class TransparentButton extends JButton 

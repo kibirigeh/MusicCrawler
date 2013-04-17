@@ -16,9 +16,10 @@ public class JPanelUpdatable extends JPanel implements Observer
 	
 	JPanelUpdatable()
 	{
-		this.setBackground(Color.BLACK);
-		this.setOpaque(true);
+		//this.setBackground(Color.BLACK);
+		//this.setOpaque(true);
 	}
+	
 	private static final long serialVersionUID = 1L;
 
 	@Override
