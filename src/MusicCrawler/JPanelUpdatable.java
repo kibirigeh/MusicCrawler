@@ -1,5 +1,6 @@
 package MusicCrawler;
 
+import java.awt.Color;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -12,6 +13,12 @@ public class JPanelUpdatable extends JPanel implements Observer
 	/**
 	 * 
 	 */
+	
+	JPanelUpdatable()
+	{
+		this.setBackground(Color.BLACK);
+		this.setOpaque(true);
+	}
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -23,5 +30,7 @@ public class JPanelUpdatable extends JPanel implements Observer
 			this.add((JCheckBox) arg);
 		}
 	}
+	
+	
 
 }

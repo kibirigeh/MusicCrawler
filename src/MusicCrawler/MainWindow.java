@@ -105,8 +105,6 @@ public class MainWindow extends JFrame implements Observer
 		btnNewButton = new JButton("Crawl");
 		//btnNewButton.setText("Music");
 		btnNewButton.setFont(new Font("Monotype Corsiva", Font.BOLD | Font.ITALIC,24));
-		btnNewButton.setForeground(Color.BLACK);
-		btnNewButton.setBackground(Color.DARK_GRAY);
 		btnNewButton.setBounds(47, 117, 117, 58);
 		contentPane.add(btnNewButton);
 		
@@ -123,11 +121,12 @@ public class MainWindow extends JFrame implements Observer
 		contentPane.add(scrollPane);
 		
 		panel = new JPanelUpdatable();
-		panel.setBackground(Color.BLACK);
-		scrollPane.setViewportView(panel);
-		panel.setForeground(Color.WHITE);
+		//panel.setBackground(Color.);
+		//panel.setForeground(Color.BLACK);
 		panel.setFont(new Font("Monotype Corsiva", Font.BOLD | Font.ITALIC, 19));
 		panel.setLayout(new GridLayout(0, 1, 10, 0));
+		scrollPane.setViewportView(panel);
+		
 		
 		lblNewLabel = new JLabel("Your results will be displayed below\u2026\u2026.");
 		lblNewLabel.setBackground(Color.BLACK);

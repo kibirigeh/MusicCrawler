@@ -82,7 +82,8 @@ public class Mp3Crawler extends Observable implements Runnable
         		JCheckBox tempObj= new JCheckBox(temp);
         		tempObj.addItemListener(itemlistener);
         		tempObj.setFont(new Font("Monotype Corsiva", Font.BOLD | Font.ITALIC, 19));
-        		tempObj.setForeground(Color.WHITE);
+        		tempObj.setForeground(Color.RED);
+        		tempObj.setBackground(Color.BLACK);
         		setChanged();
         		notifyObservers(tempObj);
         	}
